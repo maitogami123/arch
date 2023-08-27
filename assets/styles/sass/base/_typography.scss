@@ -3,6 +3,10 @@
   line-height: 110%;
   font-size: 64px;
   font-weight: 600;
+
+  @include media(mobile, tablet) {
+    font-size: 42px;
+  }
 }
 
 .h1--primary {
@@ -44,4 +48,9 @@
   &--400 {
     font-weight: 400;
   }
+}
+
+.item-title {
+  font-size: 20px;
+  font-weight: 600;
 }

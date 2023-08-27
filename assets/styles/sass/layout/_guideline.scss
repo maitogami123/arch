@@ -1,0 +1,83 @@
+.guideline {
+  color: $primary-color;
+  position: relative;
+  z-index: 10;
+
+  &__wrapper {
+    background-image: url("../../images/guideline.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 0;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0, 0.8);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+  }
+
+  &__header {
+    color: $primary-color;
+    & > hr {
+      margin-top: 1.5rem;
+      border: none;
+      border-bottom: 1px solid $dark-gray;
+      @include media(mobile, tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+
+    @include media(mobile, tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0px, 1fr));
+      gap: 2rem 1rem;
+    }
+    
+    &-wrapper {
+      width: 33.3333%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      @include media(mobile, tablet) {
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+
+    &-step {
+      font-size: 70px;
+      font-weight: 600;
+      @include media(mobile, tablet) {
+        font-size: 2.625rem;
+      }
+    }
+
+    &-desc {
+      font-size: 1rem;
+      max-width: 200px;
+      color: $light-gray;
+    }
+  }
+
+}
