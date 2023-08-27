@@ -1,0 +1,33 @@
+@mixin mobile { @media (max-width: #{$tablet-width - 1px}) {     
+  @content;   
+ } 
+}  
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+   @content;   
+ } 
+}  
+
+@mixin desktop { @media (min-width: #{$desktop-width}) {     
+  @content;  
+ } 
+}
+
+//  mixin to print out media queries (based on map keys passed) 
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == mobile) {
+      @include mobile() {
+        @content
+      }
+    } @else if ($key == tablet) {
+      @include tablet {
+        @content
+      }
+    } @else if ($key == desktop) {
+      @include desktop {
+        @content
+      }
+    }
+  }
+}

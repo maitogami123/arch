@@ -1,0 +1,10 @@
+.section {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1350px;
+  height: 100vh;
+
+  @include media(mobile) {
+    height: auto;
+  }
+}

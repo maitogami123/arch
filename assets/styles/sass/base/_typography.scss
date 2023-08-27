@@ -1,0 +1,47 @@
+.h1 {
+  letter-spacing: -0.03em;
+  line-height: 110%;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.h1--primary {
+  color: $primary-color;
+}
+
+.h1--secondary {
+  color: $secondary-color;
+}
+
+.nav-link {
+  letter-spacing: 0.05em;
+  line-height: 140%;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.text {
+  &--sm {
+    font-size: 10.5px;
+  }
+  
+  &--md {
+    font-size: 14px;
+  }
+}
+
+.weight {
+  &--600 {
+    font-weight: 600;
+  }
+
+  &--400 {
+    font-weight: 400;
+  }
+}
