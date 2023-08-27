@@ -12,6 +12,9 @@
     background-size: cover;
     padding: 6rem 0;
     position: relative;
+    @include media(mobile, tablet) {
+      background-attachment: scroll;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -20,8 +23,6 @@
       right: 0;
       bottom: 0;
       background-color: rgba(0,0,0, 0.8);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
     }
   }
 

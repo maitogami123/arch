@@ -5,13 +5,13 @@
 @import "./base/typography";
 @import "./base//reset";
 
+@import "./components/test.scss";
+@import "./components/container.scss";
+@import "./components/button.scss";
+
 @import "./layout/section";
 @import "./layout/header";
 @import "./layout/location";
 @import "./layout/technology";
 @import "./layout/guideline";
 @import "./layout/footer";
-
-@import "./components/test.scss";
-@import "./components/container.scss";
-@import "./components/button.scss";
