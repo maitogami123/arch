@@ -2,7 +2,7 @@
   &__wrapper {
     position: relative;
     background-color: $chaos-black;
-    height: 100vh;
+    // height: 100vh;
   }
 
   &__header {
@@ -52,7 +52,7 @@
     flex: 1 0 50%;
     gap: 10px;
     padding-right: 4rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin-right: auto;
     @include media(mobile, tablet) {
       flex-direction: column;

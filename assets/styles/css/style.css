@@ -412,7 +412,6 @@ table {
 .location__wrapper {
   position: relative;
   background-color: #0f0f0f;
-  height: 100vh;
 }
 .location__header {
   color: #ffffff;
@@ -486,7 +485,7 @@ table {
   flex: 1 0 50%;
   gap: 10px;
   padding-right: 4rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
   margin-right: auto;
 }
 @media (max-width: 767px) {
@@ -909,7 +908,7 @@ table {
 }
 
 .contact__wrapper {
-  padding: 7rem 0;
+  padding: 6rem 0;
   background-color: #eaeaea;
 }
 .contact__content {
