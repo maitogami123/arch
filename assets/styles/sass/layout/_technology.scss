@@ -35,5 +35,12 @@
     padding-right: 4rem;
     padding-top: 3rem;
     gap: 1rem;
+
+    @include media(mobile, tablet) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0;
+    }
   }
 }

@@ -82,10 +82,6 @@
 
 .mobile-nav {
   position: fixed;
-  padding: .2rem 0;
-  background-color: rgba(0,0,0, 0.4);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
   z-index: 50;
   width: 100%;
 
@@ -93,11 +89,20 @@
     display: none;
   }
 
+ 
+
   &__main {
     display: flex;
     justify-content: space-between;
-    padding: .2rem 1rem;
+    padding: .4rem 1rem;
     max-width: 1350px;
+    background-color: rgba(0,0,0, 0.4);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    transition: transform .2s ;
+    &.hide {
+      transform: translateY(-100%);
+    }
   }
 
   &__popup {
@@ -108,6 +113,8 @@
     height: 100%;
     padding: 2rem 1rem;
     z-index: 50;
+    transform: translateX(100%);
+    transition: transform .2s ease;
     &::after {
       content: '';
       position: absolute;
@@ -120,7 +127,7 @@
     }
 
     &.hide {
-      display: none;
+      transform: translate(0, 0);
     }
   }
 

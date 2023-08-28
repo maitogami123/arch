@@ -20,10 +20,10 @@
         </div>
         <ul class="nav__links">
           <li class="nav__link"><a href="#" class="nav-link">Segments</a></li>
-          <li class="nav__link"><a href="#" class="nav-link">map</a></li>
-          <li class="nav__link"><a href="#" class="nav-link">technology</a></li>
+          <li class="nav__link"><a href="#location" class="nav-link">map</a></li>
+          <li class="nav__link"><a href="#technology" class="nav-link">technology</a></li>
           <li class="nav__link">
-            <a href="#" class="nav-link">realizations</a>
+            <a href="#guideline" class="nav-link">realizations</a>
           </li>
         </ul>
         <div class="btn-group">
@@ -52,7 +52,7 @@
               <li>
                 <button
                   type="button"
-                  class="btn btn--filled weight--600 btn--text-left language-switcher__btn"
+                  class="btn btn--filled weight--600 btn--text-left language-switcher__btn-desk"
                 >
                   Vietnamese
                 </button>
@@ -60,7 +60,7 @@
               <li>
                 <button
                   type="button"
-                  class="btn btn--filled weight--600 btn--text-left language-switcher__btn"
+                  class="btn btn--filled weight--600 btn--text-left language-switcher__btn-desk"
                 >
                   Japanese
                 </button>
@@ -68,7 +68,7 @@
               <li>
                 <button
                   type="button"
-                  class="btn btn--filled active weight--600 btn--text-left language-switcher__btn"
+                  class="btn btn--filled active weight--600 btn--text-left language-switcher__btn-desk"
                 >
                   English
                 </button>
@@ -90,11 +90,15 @@
           <div class="language-switcher">
             <button
               type="button"
+              id="language-switcher__current-mobile"
               class="btn btn--lined btn--no-padding language-switcher__btn language-switcher__current"
             >
               <span>eng</span>
             </button>
-            <ul class="language-switcher__btns hide">
+            <ul
+            id="language-switcher__btns-mobile"
+            class="language-switcher__btns hide"
+            >
               <li>
                 <button
                   type="button"
@@ -123,6 +127,7 @@
           </div>
           <button
             type="button"
+            id="hamburger-btn"
             class="btn btn--filled btn--no-padding language-switcher__btn"
           >
             <img src="./assets/images/hambuger.svg" alt="">
@@ -140,10 +145,10 @@
         </div>
         <ul class="mobile-nav__list">
           <li class="mobile-nav__link"><a href="#">Segments</a></li>
-          <li class="mobile-nav__link"><a href="#">Map</a></li>
-          <li class="mobile-nav__link"><a href="#">Technology</a></li>
-          <li class="mobile-nav__link"><a href="#">Stages</a></li>
-          <li class="mobile-nav__link"><a href="#">Realizations</a></li>
+          <li class="mobile-nav__link"><a href="#location">Map</a></li>
+          <li class="mobile-nav__link"><a href="#technology">Technology</a></li>
+          <li class="mobile-nav__link"><a href="#guideline">Stages</a></li>
+          <li class="mobile-nav__link"><a href="#location">Realizations</a></li>
         </ul>
         <div class="mobile-nav__contact">
           <div class="mobile-nav__contact-btn">
@@ -175,7 +180,7 @@
         </div>
       </div>
     </section>
-    <div class="location__wrapper">
+    <div id="location" class="location__wrapper">
       <section class="section section--full-vh">
         <div class="location__header">
           <h1 class="h1">
@@ -394,4 +399,5 @@
     <section class="other-projects"></section>
     <footer class="main-footer"></footer>
   </body>
+  <script src="./assets/js/index.js"></script>
 </html>

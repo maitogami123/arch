@@ -5,7 +5,7 @@
 
   &--full-vh {
     height: 100vh;
-    @include media(mobile) {
+    @include media(mobile, tablet) {
       height: auto;
     }
   }
