@@ -57,6 +57,13 @@ window.addEventListener(
       desktopNavBar.classList.remove("hide");
     }
     lastScrollTop = st <= 0 ? 0 : st;
+    if (st == 0) {
+      mobileNavBar.classList.add("transparent");
+      desktopNavBar.classList.add("transparent");
+    } else {
+      mobileNavBar.classList.remove("transparent");
+      desktopNavBar.classList.remove("transparent");
+    }
   },
   false
 );

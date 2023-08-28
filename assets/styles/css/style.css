@@ -234,7 +234,12 @@ table {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 50;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
+}
+.nav__wrapper.transparent {
+  background-color: transparent;
+  -webkit-backdrop-filter: unset;
+  backdrop-filter: unset;
 }
 .nav__wrapper.hide {
   transform: translateY(-100%);
@@ -338,7 +343,12 @@ table {
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  transition: transform 0.2s;
+  transition: all 0.2s ease;
+}
+.mobile-nav__main.transparent {
+  background-color: transparent;
+  -webkit-backdrop-filter: unset;
+  backdrop-filter: unset;
 }
 .mobile-nav__main.hide {
   transform: translateY(-100%);
