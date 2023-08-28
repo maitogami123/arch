@@ -19,7 +19,17 @@
       background-color: $black;
       color: $primary-color;
     }
+
+    &-secondary {
+      background-color: $black;    
+      color: $primary-color;
+    }
   }
+
+  &--no-padding {
+    padding: 0;
+  }
+
   &--dark {
     background-color: $secondary-color;
     color: $light-gray;

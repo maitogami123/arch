@@ -162,6 +162,13 @@ table {
   background-color: #000;
   color: #ffffff;
 }
+.btn--filled-secondary {
+  background-color: #000;
+  color: #ffffff;
+}
+.btn--no-padding {
+  padding: 0;
+}
 .btn--dark {
   background-color: #333;
   color: #eaeaea;
@@ -227,6 +234,10 @@ table {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 50;
+  transition: transform 0.2s ease;
+}
+.nav__wrapper.hide {
+  transform: translateY(-100%);
 }
 @media (max-width: 767px) {
   .nav__wrapper {

@@ -6,6 +6,11 @@
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 50;
+  transition: transform .2s ease;
+
+  &.hide {
+    transform: translateY(-100%);
+  }
 
   @include media(mobile, tablet) {
     display: none
