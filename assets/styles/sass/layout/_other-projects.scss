@@ -1,0 +1,59 @@
+.other-projects {
+  display: flex;
+  align-items: center;
+  @include media(mobile, tablet) {
+    flex-direction: column;
+    align-items: start;
+  }
+  &__wrapper {
+    background-image: linear-gradient(
+        to top left,
+        rgba(#000, 0.6),
+        rgba(#000, 0.6)
+      ),
+      url(./../../images/realizations_desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    padding: 6rem 0;
+
+    overflow: hidden;
+    @include media(mobile, tablet) {
+      background-image: linear-gradient(
+          to top left,
+          rgba(#000, 0.6),
+          rgba(#000, 0.6)
+        ),
+        url(./../../images/realizations_mobile.jpg);
+      height: auto;
+    }
+  }
+  &__header {
+    width: 66.6667%;
+    h1 {
+      width: 32rem;
+    }
+    @include media(mobile, tablet) {
+      width: 100%;
+      h1 {
+        width: 100%;
+      }
+    }
+  }
+  .other-project {
+    display: flex;
+    margin-top: 3rem;
+    @include media(mobile, tablet) {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    p {
+      max-width: 200px;
+      margin-top: -0.4rem;
+      @include media(mobile, tablet) {
+        max-width: 100%;
+      }
+    }
+  }
+}

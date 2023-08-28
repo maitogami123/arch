@@ -32,11 +32,20 @@
 
 .text {
   &--sm {
-    font-size: 10.5px;
+    font-size: 10px;
   }
-  
+
   &--md {
     font-size: 14px;
+  }
+  &--tertiary {
+    color: $dark-gray;
+  }
+  &--secondary {
+    color: $secondary-color;
+  }
+  &--primary {
+    color: $primary-color;
   }
 }
 
@@ -53,4 +62,17 @@
 .item-title {
   font-size: 20px;
   font-weight: 600;
+  &--14 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  &--26 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    @include media(mobile, tablet) {
+      font-size: 20px;
+    }
+  }
 }
